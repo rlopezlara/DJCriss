@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="DJ web page to list to mix and download">
+        <meta name="robots" content="noindex, nofollow">
+        <title>DJ Criss Project | Rodrigo Lopez</title>
+        <link rel="stylesheet" href="./css/stylemain.css"> 
+        <!-- Adding Boostrasp  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">     
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <!-- Adding font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <!-- Gloria Hallelujah  -->
+      <!-- Adding JS -->        
+      <script src="js/Index.js" defer></script>
+      <!-- Icons -->
+      <script src="https://kit.fontawesome.com/b3cc284690.js" crossorigin="anonymous"></script>
+      </head>
+<body class="bg-dark">
+    <section class="bg01">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="video/bgvideo01.mp4" type="video/mp4">           
+        </video>
+       
+        <div class="container py-3">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-6 text-center">
+              <h1 class="display-4 fw-bold text-white"> DJ CRISS </h1>
+              <p class="lead pb-3 text-success">
+                Las mejores mezclas de pinto y el mundo weon oh!
+              </p>
+              <button class="btn btn-outline-danger px-5 py-3 fw-bold d-inline-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Mix, Escuchalo Aqui!</button>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="/images/Logo.png" alt="Dj Criss" class="img-fluid beating-img">
+            </div>
+          </div>
+        </div>     
+      </section>
+      
+      <!-- Modal Reproductor  -->      
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h1 class="modal-title text-light" id="exampleModalLabel">Reggaeton Mix Party Vol 07</h1>
+              <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center">
+              <div class="music-player text-center">
+                <img src="/images/reggaeton_2023_vol07.jpg" class="song-img img-fluid" alt="song-img">                 
+                 
+                <audio class="song">
+                  <source src="/songs/Mix Reggaeton Vol07.mp3" type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" class="progress w-100">
+                <p class="time-display">0:00</p>
+                <div class="controls d-flex justify-content-around mt-3">
+                  <div>
+                    <a href="/songs/Mix Reggaeton Vol07.mp3" download="Mix Reggaeton Vol01">
+                      <i class="fa-solid fa-circle-down liveToastBtn"></i>
+                    </a>
+                  </div>
+                  <div class="play-pause">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <div class="like-button">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Toast Function -->
+      
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+             
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <strong class="me-auto"> Descargando</strong>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Gracias por tu descarga! Disfruta!
+          </div>
+        </div>
+      </div>      
+      
+      
+      <!-- Second part -->
+
+<section class="bg-black">
+  <div class="container py-5">
+    <div class="row mt-4">
+      <div class="col-12">
+        <h2 class="text-danger fs-1 f2-bold mb-5 text-center">Escucha y descarga tus mixs!</h2>
+      </div>
+    </div>
+  <div class="row mt-4 g-4 justify-content-center align-items-center">
+      <!-- Column 01 -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+    <div class="music-player">
+      
+      <img src="/images/reggaeton_2023.jpg" class="song-img" alt="song-img">
+      <h1>Reggaeton Mix Vol 01 </h1>
+      <p>Set mix by DJ Criss 2023</p> 
+      <!-- audio 01 -->
+       <audio  class="song">
+          <source src="/songs/Reggaeton_2023.mp3" type="audio/mpeg">
+       </audio>
+       <input type ="range" value="0" class="progress">
+       <p class="time-display">0:00</p>
+      <div class="controls">
+          <div>            
+              <a href="/songs/Reggaeton_2023.mp3" download="Mix Reggaeton Vol01">
+                <i class="fa-solid fa-circle-down liveToastBtn"></i>
+              </a>           
+          </div>
+          <div class="play-pause">
+          <i class="fa-solid fa-play"></i>
+          </div>
+          <div class="like-button">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+       
+  </div>
+  </div>
+     <!-- Column 02 -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+    <div class="music-player">
+      
+      <img src="/images/reggaeton_2023_vol02.jpg" class="song-img" alt="song-img">
+      <h1>Reggaeton Mix Vol 02 </h1>
+      <p>Set mix by DJ Criss 2023</p>
+      <!-- audio 02-->
+       <audio  class="song">
+          <source src="/songs/Reggaeton_2023_vol02.mp3" type="audio/mpeg">
+       </audio>
+       <input type ="range" value="0" class="progress">
+       <p class="time-display">0:00</p>
+      <div class="controls">
+        <div>
+          <a href="/songs/Reggaeton_2023_vol02.mp3" download="Mix Reggaeton Vol02">
+            <i class="fa-solid fa-circle-down liveToastBtn"></i>
+          </a>
+        </div>
+        <div class="play-pause">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="like-button">
+          <i class="fa-regular fa-heart"></i></div>
+      </div>
+       
+  </div>
+  </div>  
+     <!-- Column 03 -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">   
+    <div class="music-player">
+      <img src="/images/reggaeton_2023_vol03.jpg" class="song-img" alt="song-img">
+      <h1>Reggaeton Mix Vol 03 </h1>
+      <p>Set mix by DJ Criss 2023</p>
+      <!-- audio 03 -->
+       <audio  class="song">
+          <source src="/songs/Reggaeton_2023_vol03.mp3" type="audio/mpeg">
+       </audio>
+       <input type ="range" value="0" class="progress">
+       <p class="time-display">0:00</p>
+      <div class="controls">
+        <div>
+          <a href="/songs/Reggaeton_2023_vol03.mp3" download="Mix Reggaeton Vol03">
+            <i class="fa-solid fa-circle-down liveToastBtn"></i>
+          </a>
+        </div>
+        <div class="play-pause">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="like-button">
+          <i class="fa-regular fa-heart"></i></div>        
+      </div>
+       
+  </div>
+  </div>
+  </div>
+</div>
+</section>
+<!-- Image second part  -->
+<section id="background-container">
+<div class="container py-5">
+  <div class="row mt-4">
+    <div class="col-12">
+      <h2 class="text-danger fs-1 f2-bold mb-5 text-center justify-center">La musica mas prendida!</h2>
+    </div>
+  </div>
+</div>
+</section>
+<!-- New Row (second row)-->
+<section class="bg-black">
+<div class="container py-1">
+<div class="row mt-4 g-4 justify-content-center align-items-center">
+  <!-- Column 01 -->
+<div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+<div class="music-player">  
+  <img src="/images/reggaeton_2023_vol04.jpg" class="song-img" alt="song-img">
+  <h1>Reggaeton Mix Vol 04 </h1>
+  <p>Set mix by DJ Criss 2023</p>
+  <!-- audio 01-->
+   <audio  class="song">
+      <source src="/songs/Reggaeton_2023_vol04.mp3" type="audio/mpeg">
+   </audio>
+   <input type ="range" value="0" class="progress">
+   <p class="time-display">0:00</p>
+  <div class="controls">
+    <div>
+      <a href="/songs/Reggaeton_2023_vol04.mp3" download="Mix Reggaeton Vol04">
+        <i class="fa-solid fa-circle-down liveToastBtn"></i>
+      </a>
+    </div>
+    <div class="play-pause">
+      <i class="fa-solid fa-play"></i>
+    </div>
+    <div class="like-button"><i class="fa-regular fa-heart"></i></div>
+  </div>
+  
+</div>
+</div>
+ <!-- Column 02-->
+<div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+<div class="music-player">
+  
+  <img src="/images/reggaeton_2023_vol05.jpg" class="song-img" alt="song-img">
+  <h1>Reggaeton Mix Vol 05</h1>
+  <p>Set mix by DJ Criss 2024</p>
+  <!-- audio 02-->
+   <audio class="song">
+      <source src="/songs/Reggaeton_2023_vol05.mp3" type="audio/mpeg">
+   </audio>
+   <input type ="range" value="0" class="progress">
+   <p class="time-display">0:00</p>
+  <div class="controls">
+    <div>
+      <a href="/songs/Reggaeton_2023_vol05.mp3" download="Mix Reggaeton Vol05">
+        <i class="fa-solid fa-circle-down liveToastBtn"></i>
+      </a>
+    </div>
+    <div class="play-pause">
+      <i class="fa-solid fa-play"></i>
+    </div>
+    <div class="like-button"><i class="fa-regular fa-heart"></i></div>
+  </div>
+   
+</div>
+</div>  
+ <!-- Column 03 -->
+<div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">   
+<div class="music-player">
+ 
+  <img src="/images/reggaeton_2023_vol06.jpg" class="song-img" alt="song-img">
+  <h1>Reggaeton Mix Vol 06</h1>
+  <p>Set mix by DJ Criss 2024</p>
+  <!-- audio 03 -->
+   <audio class="song">
+      <source src="/songs/Reggaeton_2023_vol06.mp3" type="audio/mpeg">
+   </audio>
+   <input type ="range" value="0" class="progress">
+   <p class="time-display">0:00</p>
+  <div class="controls">
+    <div>
+      <a href="/songs/Reggaeton_2023_vol06.mp3" download="Mix Reggaeton Vol01">
+        <i class="fa-solid fa-circle-down liveToastBtn"></i>
+      </a>
+    </div>
+    <div class="play-pause">
+      <i class="fa-solid fa-play"></i>
+    </div>
+    <div class="like-button"><i class="fa-regular fa-heart"></i></div>
+  </div>
+   
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Image 02 four part  -->
+<section id="background-container02">
+  <div class="container py-5">
+    <div class="row mt-4">
+      <div class="col-12">
+        <h2 class="text-light fs-1 f2-bold mb-5 text-center justify-center">Pronto mas mezclas...</h2>
+      </div>
+    </div>
+  </div>
+  </section>
+</body>
+<footer>
+  <section class="container py-5">
+    <div class="row mt-4">
+      <div class="col-12 d-flex align-items-center justify-content-between">
+        <h2 class="text-primary fs-1 f2-bold mb-3 text-center">Contacto</h2>
+        
+      </div>
+    </div>
+    <div class="row mt-3 g-4">
+      <div class="col-12 col-lg-4">
+        <div class="p-3 ">
+         
+        <h3>Pinto</h3>
+        <p>Chillan, del Cesfam al mundo!</p>
+      </div>
+    </div>
+      <div class="col-12 col-lg-4">
+        <div class="p-3">                  
+          <h3>Contacto</h3>
+          <div>
+           <p><i class="fa-solid fa-envelope"></i> djset@kuxico.com</p>
+            
+        </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+       <img id="footerimage" src="images/bg01.jpg">
+      </div>
+    </div>
+  </section>
+</footer>
+
+</html>      

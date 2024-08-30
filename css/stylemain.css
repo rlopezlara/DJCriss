@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+h1,h2,h3,h4,h5,h6,p,input{
+    font-family: 'Gloria Hallelujah',sans-serif;
+}
+.bg-video-section {
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+}
+
+.bg-video {
+    position: absolute;
+    top: 60%;
+    left: 49.5%; 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.bg-video-section .container {
+    position: relative;
+    z-index: 1; /* Ensure content is above the video */
+    color: white; /* Text color if needed */
+}
+/* Player styling */
+.music-player{
+    background: #599f60;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 5%;
+}
+ 
+.song-img{
+    width: 220px;
+    border-radius: 10%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(255,26,26,0.22);
+}
+.music-player h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+.music-player p{
+    font-size: 14px;
+    color: #333;
+    
+}
+.progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+    background: linear-gradient(to right, #f53192, #ffb400);
+    
+}
+.progress::-webkit-slider-thumb:hover{
+    border: 5px solid #cc3311;
+    background:#000000;
+}
+ 
+.progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background:#f53192;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+    transition: box-shadow 0.2s ease;
+    
+}
+ 
+.progress::-moz-range-thumb {
+    width: 26px;
+    height: 26px;
+    background: #f53192;
+    border-radius: 50%;
+    border: 40px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+}
+ 
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255,26,26,0.22);
+    cursor: pointer;
+}
+.controls div:nth-child(2){
+    transform:scale(1.5);
+    background: #f53192;
+    color: #fff;
+}
+ /* second section styling */
+#background-container {
+    background-image: url('/images/bg02.jpg');
+    background-size: cover; 
+    background-position: center;
+    width: auto; 
+    height: 100vh;
+    background-attachment: fixed;   
+}
+#background-container02 {
+    background-image: url('/images/bg03.jpg');
+    background-size: cover; 
+    background-position: center;
+    width: auto; 
+    height: 100vh;
+       
+}
+/* footer image */
+#footerimage{
+    height: 40vh;
+    width: auto;
+    border-radius: 10%;
+}
+footer{
+    background-color: #b41313;
+}
+/* beating Logo effect */
+@keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50%, 75% {
+      transform: scale(1.2);
+    }
+  }
+  
+.beating-img {
+    animation: heartbeat 1.5s infinite;
+  }
+  
