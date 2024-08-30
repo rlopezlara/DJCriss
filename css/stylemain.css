@@ -130,7 +130,7 @@ h1,h2,h3,h4,h5,h6,p,input{
     background-attachment: fixed;   
 }
 #background-container02 {
-    background-image: url("../images/bg03.jpg");
+    background-image: url("/images/bg03.jpg");
     background-size: cover; 
     background-position: center;
     width: auto; 
